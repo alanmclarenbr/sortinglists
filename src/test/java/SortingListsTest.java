@@ -51,4 +51,10 @@ public class SortingListsTest {
                 .containsExactlyElementsOf(sortedList);
     }
 
+    @Test
+    public void testMergeSort(){
+        assertThat(sortingLists.mergeSort(integerList))
+                .containsExactlyElementsOf(sortedList);
+    }
+
 }
