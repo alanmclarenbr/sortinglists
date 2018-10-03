@@ -75,7 +75,7 @@ public class SortingLists {
         while(firstHalfIndex<firstHalf.size() && secondHalfIndex<secondHalf.size()){
             if(firstHalf.get(firstHalfIndex)<secondHalf.get(secondHalfIndex)){
                 listToSort.add(firstHalf.get(firstHalfIndex++));
-            }else if(secondHalfIndex < secondHalf.size()){
+            }else{
                 listToSort.add(secondHalf.get(secondHalfIndex++));
             }
             mergeIndex++;

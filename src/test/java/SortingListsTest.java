@@ -1,25 +1,23 @@
-import com.google.common.collect.Lists;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
 import java.util.Collections;
 import java.util.List;
-import java.util.Random;
 
+import static com.google.common.collect.Lists.newArrayList;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class SortingListsTest {
 
     private SortingLists sortingLists = new SortingLists();
-    private static List<Integer> preShuffledList = Lists.newArrayList();
-    private static List<Integer> integerList = Lists.newArrayList();
-    private static List<Integer> sortedList = Lists.newArrayList();
+    private static List<Integer> preShuffledList = newArrayList();
+    private static List<Integer> integerList = newArrayList();
+    private static List<Integer> sortedList = newArrayList();
 
     @BeforeClass
     public static void init(){
-        Random random = new Random();
-        for(int i=0;i<100000;i++) {
+        for(int i=0;i<100;i++) {
             integerList.add(i+1);
             sortedList.add(i+1);
         }
